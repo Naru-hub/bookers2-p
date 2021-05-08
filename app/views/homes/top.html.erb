@@ -1,4 +1,7 @@
 <div class="container">
+  <% if flash[:notice] %>
+    <p><%= flash[:notice] %></p>
+  <% end %>
     <div class="row mt-3">
         <div class="mx-auto col-11 col-sm-10 col-lg-8 col-xl-6">
             <h1>
@@ -16,7 +19,7 @@
             <p> about various books!</p>
             <div class="btn-wrapper col-10 mx-auto">
               <div class="row">
-                 <%= link_to "Login",new_user_session_path,class:"btn btn-info btn-sm btn-block mb-3 sign_in" %>
+                 <%= link_to "Log in",new_user_session_path,class:"btn btn-info btn-sm btn-block mb-3 sign_in" %>
               </div>
               <div class="row">
                  <%= link_to "Sign Up",new_user_registration_path,class:"btn btn-success btn-sm btn-block sign_up" %>
