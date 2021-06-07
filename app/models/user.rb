@@ -28,7 +28,7 @@ class User < ApplicationRecord
   end
 
   def following?(user)
-    passive_relationships.include?(user)
+    followings.include?(user)
   end
 
   attachment :profile_image
