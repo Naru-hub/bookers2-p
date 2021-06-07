@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -52,16 +52,17 @@
       </div>
      </nav>
     </header>
+    <body>
 
-    <%= yield %>
-  </body>
-  <footer>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="mx-auto">
-          <p>CopyRight Infratop.inc</p>
+      <%= yield %>
+    </body>
+    <footer>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="mx-auto">
+            <p>CopyRight Infratop.inc</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</html>
+    </footer>
+  </html>
