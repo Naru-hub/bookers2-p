@@ -1,7 +1,4 @@
-
-<div class="new-comment">
 <%= form_with(model:[book, book_comment], local: true) do |f| %>
   <%= f.text_area :comment, class: "form-control exampleFormControlTextarea1" %>
   <%= f.submit "送信" %>
 <% end %>
-</div>
